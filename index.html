@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lungu Gabriel Dimitrie - CV</title>
     <style>
-        /* ========== RESET & BASE STYLES ========== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.4;
@@ -19,575 +13,316 @@
             background: #f5f5f5;
             font-size: 9.5pt;
         }
-        
-        /* ========== PRINT STYLES (A4 OPTIMIZED) ========== */
-        @page {
-            size: A4;
-            margin: 12mm;
-        }
-        
+        @page { size: A4; margin: 12mm; }
         @media print {
-            body {
-                background: white;
-                font-size: 9pt;
-                line-height: 1.35;
-            }
-            
-            .container {
-                max-width: 100%;
-                width: 210mm;
-                margin: 0;
-                padding: 12mm 14mm;
-                box-shadow: none;
-            }
-            
-            .section {
-                page-break-inside: avoid;
-            }
-            
-            h2 {
-                page-break-after: avoid;
-            }
-            
-            .header-photo img {
-                print-color-adjust: exact;
-                -webkit-print-color-adjust: exact;
-            }
-            
-            .certification-item {
-                print-color-adjust: exact;
-                -webkit-print-color-adjust: exact;
-            }
-            
-            .cert-badge {
-                print-color-adjust: exact;
-                -webkit-print-color-adjust: exact;
-            }
+            body { background: white; font-size: 9pt; line-height: 1.35; }
+            .container { max-width: 100%; width: 210mm; margin: 0; padding: 12mm 14mm; box-shadow: none; }
+            .section { page-break-inside: avoid; }
+            h2 { page-break-after: avoid; }
+            .header-photo img { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .certification-item { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .cert-badge { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .project-item { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
         }
-        
-        /* ========== LAYOUT ========== */
-        .container {
-            max-width: 850px;
-            margin: 12px auto;
-            background: white;
-            padding: 22px 30px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        
-        /* ========== HEADER SECTION (ULTRA COMPACT) ========== */
-        header {
-            border-bottom: 2.5px solid #2c3e50;
-            padding-bottom: 10px;
-            margin-bottom: 12px;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 18px;
-        }
-        
-        .header-text {
-            flex: 1;
-        }
-        
-        .header-photo {
-            flex-shrink: 0;
-        }
-        
+        .container { max-width: 850px; margin: 12px auto; background: white; padding: 22px 30px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        header { border-bottom: 2.5px solid #2c3e50; padding-bottom: 10px; margin-bottom: 12px; }
+        .header-content { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; }
+        .header-text { flex: 1; }
+        .header-photo { flex-shrink: 0; }
         .header-photo img {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2.5px solid #3498db;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            display: block;
+            width: 90px; height: 90px; border-radius: 50%; object-fit: cover;
+            border: 2.5px solid #3498db; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: block;
         }
-        
-        h1 {
-            font-size: 24pt;
-            color: #2c3e50;
-            margin-bottom: 3px;
-            font-weight: 600;
-            line-height: 1;
-        }
-        
-        .professional-title {
-            font-size: 10.5pt;
-            color: #555;
-            margin-bottom: 7px;
-            font-weight: 500;
-            line-height: 1.2;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            font-size: 8.5pt;
-            color: #666;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        
-        .contact-item::before {
-            content: "●";
-            color: #3498db;
-            font-size: 6pt;
-        }
-        
-        /* ========== SECTION STYLES (ULTRA COMPACT) ========== */
-        .section {
-            margin-bottom: 11px;
-        }
-        
+        h1 { font-size: 24pt; color: #2c3e50; margin-bottom: 3px; font-weight: 600; line-height: 1; }
+        .professional-title { font-size: 10.5pt; color: #555; margin-bottom: 7px; font-weight: 500; line-height: 1.2; }
+        .contact-info { display: flex; flex-wrap: wrap; gap: 12px; font-size: 8.5pt; color: #666; }
+        .contact-item { display: flex; align-items: center; gap: 4px; }
+        .contact-item::before { content: "●"; color: #3498db; font-size: 6pt; }
+        .section { margin-bottom: 11px; }
         h2 {
-            font-size: 11pt;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 3px;
-            margin-bottom: 7px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-size: 11pt; color: #2c3e50; border-bottom: 2px solid #3498db;
+            padding-bottom: 3px; margin-bottom: 7px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.5px;
         }
-        
-        h3 {
-            font-size: 10pt;
-            color: #2c3e50;
-            margin-bottom: 3px;
-            font-weight: 600;
-        }
-        
-        /* ========== PROFESSIONAL SUMMARY ========== */
-        .summary {
-            font-size: 9.5pt;
-            line-height: 1.45;
-            color: #444;
-            text-align: justify;
-        }
-        
-        /* ========== EXPERIENCE SECTION (ULTRA OPTIMIZED) ========== */
-        .experience-item {
-            margin-bottom: 11px;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
-        }
-        
-        .job-title {
-            font-size: 10pt;
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .job-duration {
-            font-size: 8.5pt;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        
-        .company-name {
-            font-size: 9.5pt;
-            color: #3498db;
-            margin-bottom: 5px;
-            font-weight: 500;
-        }
-        
-        .responsibilities {
-            margin-left: 13px;
-            margin-top: 4px;
-        }
-        
-        .responsibilities li {
-            margin-bottom: 2px;
-            color: #555;
-            line-height: 1.35;
-            font-size: 9pt;
-        }
-        
-        .subsection-title {
-            font-size: 9.5pt;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-top: 6px;
-            margin-bottom: 3px;
-            font-style: italic;
-        }
-        
-        /* ========== EDUCATION SECTION (COMPACT) ========== */
-        .education-item {
-            margin-bottom: 8px;
-        }
-        
-        .degree {
-            font-size: 9.5pt;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        .institution {
-            font-size: 9pt;
-            color: #3498db;
-            margin-bottom: 1px;
-        }
-        
-        .education-duration {
-            font-size: 8.5pt;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        
-        /* ========== CERTIFICATION SECTION (HIGHLIGHTED BUT COMPACT) ========== */
+        h3 { font-size: 10pt; color: #2c3e50; margin-bottom: 3px; font-weight: 600; }
+        .summary { font-size: 9.5pt; line-height: 1.45; color: #444; text-align: justify; }
+        .experience-item { margin-bottom: 11px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+        .job-title { font-size: 10pt; color: #2c3e50; font-weight: 600; }
+        .job-duration { font-size: 8.5pt; color: #7f8c8d; font-style: italic; }
+        .company-name { font-size: 9.5pt; color: #3498db; margin-bottom: 5px; font-weight: 500; }
+        .responsibilities { margin-left: 13px; margin-top: 4px; }
+        .responsibilities li { margin-bottom: 2px; color: #555; line-height: 1.35; font-size: 9pt; }
+        .subsection-title { font-size: 9.5pt; font-weight: 600; color: #2c3e50; margin-top: 6px; margin-bottom: 3px; font-style: italic; }
+        .education-item { margin-bottom: 8px; }
+        .degree { font-size: 9.5pt; font-weight: 600; color: #2c3e50; }
+        .institution { font-size: 9pt; color: #3498db; margin-bottom: 1px; }
+        .education-duration { font-size: 8.5pt; color: #7f8c8d; font-style: italic; }
         .certification-item {
-            margin-bottom: 8px;
-            padding: 8px;
-            background-color: #f0f8ff;
-            border-left: 3px solid #3498db;
+            margin-bottom: 8px; padding: 8px;
+            background-color: #f0f8ff; border-left: 3px solid #3498db;
         }
-        
-        .certification-name {
-            font-size: 10pt;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 3px;
-        }
-        
-        .certification-provider {
-            font-size: 9pt;
-            color: #3498db;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-        
-        .certification-details {
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.5;
-        }
-        
+        .certification-name { font-size: 10pt; font-weight: 700; color: #2c3e50; margin-bottom: 3px; }
+        .certification-provider { font-size: 9pt; color: #3498db; font-weight: 600; margin-bottom: 2px; }
+        .certification-details { font-size: 8.5pt; color: #555; line-height: 1.5; }
         .cert-badge {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 1px 6px;
-            border-radius: 3px;
-            font-size: 7.5pt;
-            font-weight: 600;
-            margin-left: 6px;
-            text-transform: uppercase;
+            display: inline-block; background-color: #3498db; color: white;
+            padding: 1px 6px; border-radius: 3px; font-size: 7.5pt;
+            font-weight: 600; margin-left: 6px; text-transform: uppercase;
         }
-        
-        /* ========== SKILLS SECTION (COMPACT GRID) ========== */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
+
+        /* ===== KEY PROJECTS SECTION ===== */
+        .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .project-item {
+            padding: 8px 10px;
+            background: linear-gradient(135deg, #f8fbff 0%, #eef5fc 100%);
+            border-left: 3px solid #27ae60;
+            border-radius: 0 4px 4px 0;
         }
-        
-        .skill-category {
-            margin-bottom: 6px;
+        .project-title { font-size: 9.5pt; font-weight: 700; color: #2c3e50; margin-bottom: 2px; }
+        .project-collab { font-size: 8pt; color: #27ae60; font-weight: 600; margin-bottom: 3px; }
+        .project-desc { font-size: 8.5pt; color: #555; line-height: 1.4; }
+        .impact-badge {
+            display: inline-block; background-color: #27ae60; color: white;
+            padding: 1px 5px; border-radius: 3px; font-size: 7pt;
+            font-weight: 600; margin-left: 5px; text-transform: uppercase;
         }
-        
-        .skill-category-title {
-            font-size: 9pt;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 3px;
-        }
-        
-        .skill-list {
-            font-size: 8.5pt;
-            color: #555;
-            line-height: 1.45;
-        }
-        
-        /* ========== ACHIEVEMENTS SECTION (COMPACT) ========== */
-        .achievement-item {
-            margin-bottom: 5px;
-            padding-left: 11px;
-            position: relative;
-        }
-        
-        .achievement-item::before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: #3498db;
-            font-weight: bold;
-            font-size: 8.5pt;
-        }
-        
-        .achievement-name {
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 9pt;
-        }
-        
-        .achievement-details {
-            color: #666;
-            font-size: 8.5pt;
-        }
-        
-        /* ========== LANGUAGES (INLINE COMPACT) ========== */
-        .languages {
-            display: flex;
-            gap: 22px;
-            flex-wrap: wrap;
-        }
-        
-        .language-item {
-            font-size: 9pt;
-        }
-        
-        .language-name {
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        /* ========== RESPONSIVE DESIGN ========== */
+
+        .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .skill-category { margin-bottom: 6px; }
+        .skill-category-title { font-size: 9pt; font-weight: 600; color: #2c3e50; margin-bottom: 3px; }
+        .skill-list { font-size: 8.5pt; color: #555; line-height: 1.45; }
+        .achievement-item { margin-bottom: 5px; padding-left: 11px; position: relative; }
+        .achievement-item::before { content: "▸"; position: absolute; left: 0; color: #3498db; font-weight: bold; font-size: 8.5pt; }
+        .achievement-name { font-weight: 600; color: #2c3e50; font-size: 9pt; }
+        .achievement-details { color: #666; font-size: 8.5pt; }
+        .languages { display: flex; gap: 22px; flex-wrap: wrap; }
+        .language-item { font-size: 9pt; }
+        .language-name { font-weight: 600; color: #2c3e50; }
         @media screen and (max-width: 768px) {
-            .container {
-                padding: 20px 18px;
-            }
-            
-            h1 {
-                font-size: 20pt;
-            }
-            
-            .header-content {
-                flex-direction: column-reverse;
-                align-items: center;
-                text-align: center;
-            }
-            
-            .header-photo {
-                margin-bottom: 10px;
-            }
-            
-            .contact-info {
-                justify-content: center;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+            .container { padding: 20px 18px; }
+            h1 { font-size: 20pt; }
+            .header-content { flex-direction: column-reverse; align-items: center; text-align: center; }
+            .header-photo { margin-bottom: 10px; }
+            .contact-info { justify-content: center; }
+            .skills-grid, .projects-grid { grid-template-columns: 1fr; }
+            .job-header { flex-direction: column; align-items: flex-start; }
         }
-        
         @media print {
-            .header-content {
-                display: flex;
-                flex-direction: row;
-            }
-            
-            h1 {
-                font-size: 22pt;
-            }
-            
-            .professional-title {
-                font-size: 10pt;
-            }
+            .header-content { display: flex; flex-direction: row; }
+            h1 { font-size: 22pt; }
+            .professional-title { font-size: 10pt; }
+            .projects-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
 <body>
-    <!-- CONTAINER START -->
-    <div class="container">
-        
-        <!-- ========== HEADER SECTION ========== -->
-        <header>
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>Lungu Gabriel Dimitrie</h1>
-                    <div class="professional-title">Process Engineer | Electromechanical Engineering Graduate | Microsoft Certified Power BI Advanced</div>
-                    <div class="contact-info">
-                        <div class="contact-item">Cluj-Napoca, Romania</div>
-                        <div class="contact-item">+40-726397658</div>
-                        <div class="contact-item">lungugabrieldimitrie@gmail.com</div>
-                    </div>
-                </div>
-                <div class="header-photo">
-                    <img src="poza_gabi.jpg" alt="Gabriel Lungu Profile Photo">
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Lungu Gabriel Dimitrie</h1>
+                <div class="professional-title">Process Technician | Production &amp; Quality Specialist | Microsoft Certified Power BI Advanced</div>
+                <div class="contact-info">
+                    <div class="contact-item">Cluj-Napoca, Romania</div>
+                    <div class="contact-item">+40-726397658</div>
+                    <div class="contact-item">lungugabrieldimitrie@gmail.com</div>
                 </div>
             </div>
-        </header>
-        
-        <!-- ========== PROFESSIONAL SUMMARY ========== -->
-        <section class="section">
-            <h2>Professional Summary</h2>
-            <p class="summary">
-                Electrical Engineering graduate with 2+ years of hands-on experience in electronics manufacturing at Bosch Cluj and Microsoft Certified Power BI Advanced credential. Strong expertise in process optimization using statistical methods (SPC), KPI monitoring, and production support. Proven ability to develop documentation, work instructions, and data-driven solutions for manufacturing processes. Deep understanding of SMT/THT production environments, quality systems, and lean production principles. Skilled in MS Office (advanced Excel, Power BI), SAP, and statistical analysis. Passionate about continuous improvement, team collaboration, and achieving operational excellence through structured problem-solving.
-            </p>
-        </section>
-        
-        <!-- ========== CERTIFICATIONS ========== -->
-        <section class="section">
-            <h2>Professional Certifications</h2>
-            
-            <div class="certification-item">
-                <div class="certification-name">
-                    Microsoft Power BI - Advanced
-                    <span class="cert-badge">CERTIFIED</span>
-                </div>
-                <div class="certification-provider">TÜV Rheinland Romania | People & Business Assurance</div>
-                <div class="certification-details">
-                    <strong>Certificate No.:</strong> 632-2025 | <strong>Issue Date:</strong> October 8, 2025 | <strong>Exam Passed:</strong> September 25, 2025, Jucu-Herghelie | <strong>Duration:</strong> 16 hours
+            <div class="header-photo">
+                <img src="poza_gabi.jpg" alt="Gabriel Lungu Profile Photo">
+            </div>
+        </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Production specialist with 3+ years of hands-on experience in electronics manufacturing at Bosch Cluj, combining direct production floor expertise (THT assembly, FA testing operations) with advanced data analytics capabilities (Microsoft Power BI Advanced, TÜV Rheinland certified). Proven track record in operating production and testing equipment, implementing process improvements, and developing automated reporting systems in collaboration with department management and team leadership. Deep understanding of quality control procedures, production KPIs, and lean manufacturing principles gained through direct involvement in THT production lines, connector and housing assembly (FA1), and leak/temperature testing operations (FA2). Recognized by management for strong analytical skills, problem-solving ability, and effective communication across teams. Committed to driving measurable improvements in production efficiency, quality, and process stability through structured data-driven methods.
+        </p>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section">
+        <h2>Professional Certifications</h2>
+        <div class="certification-item">
+            <div class="certification-name">
+                Microsoft Power BI - Advanced
+                <span class="cert-badge">CERTIFIED</span>
+            </div>
+            <div class="certification-provider">TÜV Rheinland Romania | People &amp; Business Assurance</div>
+            <div class="certification-details">
+                <strong>Certificate No.:</strong> 632-2025 | <strong>Issue Date:</strong> October 8, 2025 |
+                <strong>Exam Passed:</strong> September 25, 2025, Jucu-Herghelie | <strong>Duration:</strong> 16 hours
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h3 class="job-title">Working Student – Production &amp; Process Analytics</h3>
+                <span class="job-duration">July 2023 – Present (3+ years total production experience)</span>
+            </div>
+            <div class="company-name">Bosch Cluj Plant | Cluj-Napoca, Romania</div>
+
+            <div class="subsection-title">Production Operations &amp; Quality Control</div>
+            <ul class="responsibilities">
+                <li>Operated and supported THT (Through-Hole Technology) production lines, ensuring quality standards and production targets were met according to work instructions and control plans</li>
+                <li>Performed connector and housing assembly operations on FA1 production line, maintaining quality specifications and contributing to line efficiency improvements</li>
+                <li>Operated leak testing and temperature testing equipment on FA2 line, conducting quality inspections, documenting test results, and reporting deviations to engineering and quality teams</li>
+                <li>Supported production supervisors and team leaders during shift operations, assisting with troubleshooting, material flow coordination, and real-time problem resolution on the production floor</li>
+                <li>Participated in root cause analysis activities for quality issues and production stoppages, contributing observations and data from direct line experience</li>
+            </ul>
+
+            <div class="subsection-title">Process Data Analytics &amp; Reporting Systems</div>
+            <ul class="responsibilities">
+                <li>Designed and deployed automated reporting systems in Power BI and Excel, connecting production data to server infrastructure and eliminating manual data transfer processes across the department</li>
+                <li>Built Statistical Process Control (SPC) dashboards enabling real-time monitoring of critical production parameters, supporting early detection of process deviations and quality issues</li>
+                <li>Analyzed production KPIs including cycle time, equipment utilization, yield rates, and failure patterns to support engineering decisions and continuous improvement initiatives</li>
+                <li>Developed quality monitoring tools enabling engineering and quality teams to track defect trends, test results, and process capability metrics with live data visibility</li>
+            </ul>
+
+            <div class="subsection-title">Cross-Functional Projects &amp; Process Improvement</div>
+            <ul class="responsibilities">
+                <li>Collaborated directly with Department Manager and Team Leader on multiple process improvement projects, from initial concept definition through implementation and performance tracking</li>
+                <li>Received formal positive feedback from department management for analytical capability, project execution quality, and effective communication across production, engineering, and quality teams</li>
+                <li>Served as primary data and reporting resource for the department, supporting engineers, supervisors, and management with structured analysis and actionable insights</li>
+                <li>Participated in production meetings providing data-driven recommendations on quality trends, KPI deviations, and corrective actions based on both floor observations and analytical findings</li>
+            </ul>
+
+            <div class="subsection-title">Technical Documentation &amp; Production Support</div>
+            <ul class="responsibilities">
+                <li>Created and maintained work instructions, reporting procedure documentation, and data source guides aligned with Bosch quality standards and lean production principles</li>
+                <li>Supported engineering teams during production ramp-up phases, Start of Production (SoP), and running series with weekly performance reports and KPI tracking tools</li>
+                <li>Assisted in preparation of technical documentation for control plans and process audits, contributing to audit readiness across assigned production areas</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h3 class="job-title">Electrical Machine Implementation – Engineering Project</h3>
+                <span class="job-duration">January 2024 – Present</span>
+            </div>
+            <div class="company-name">Solis UTCN Cluj-Napoca | Student Engineering Project | Automotive Sector</div>
+            <ul class="responsibilities">
+                <li>Developed electrical machine systems for automotive applications, applying electromechanical engineering, power electronics, and mechanical design principles</li>
+                <li>Collaborated in cross-functional student engineering team on technical problem-solving, system integration, structured documentation, and project delivery</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- KEY PROJECTS -->
+    <section class="section">
+        <h2>Key Projects &amp; Implemented Solutions</h2>
+        <div class="projects-grid">
+
+            <div class="project-item">
+                <div class="project-title">Department-Wide Data Automation System <span class="impact-badge">DELIVERED</span></div>
+                <div class="project-collab">Collaboration: Department Manager &amp; Team Leader</div>
+                <div class="project-desc">Automated the full data processing workflow for the department using Power BI and Excel, replacing manual reporting and connecting live data from production servers. Reduced processing time and eliminated data errors across teams.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">SPC Production Monitoring Dashboard <span class="impact-badge">DELIVERED</span></div>
+                <div class="project-collab">Collaboration: Engineering &amp; Quality Teams</div>
+                <div class="project-desc">Implemented Statistical Process Control dashboards enabling real-time monitoring of critical process parameters. Supported proactive quality management and early deviation response on production lines.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Cost &amp; Equipment Utilization KPI System <span class="impact-badge">DELIVERED</span></div>
+                <div class="project-collab">Collaboration: Department Manager</div>
+                <div class="project-desc">Designed targeted dashboards for cost optimization and machine utilization tracking, directly supporting management decisions on resource allocation and improving visibility into line efficiency metrics.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Server Connectivity &amp; Reporting Infrastructure <span class="impact-badge">DELIVERED</span></div>
+                <div class="project-collab">Collaboration: IT &amp; Production Teams</div>
+                <div class="project-desc">Led the integration of local reporting tools with production servers, establishing centralized and reliable data pipeline. Enabled live KPI tracking and eliminated manual file-based data exchange processes.</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-category-title">Production Operations &amp; Quality</div>
+                <div class="skill-list">
+                    THT (Through-Hole Technology) production operations, FA assembly operations (connectors, housings), Leak testing and temperature testing equipment, Quality control procedures and inspection, Work instructions and control plan execution, Production troubleshooting and problem-solving
                 </div>
             </div>
-        </section>
-        
-        <!-- ========== PROFESSIONAL EXPERIENCE ========== -->
-        <section class="section">
-            <h2>Professional Experience</h2>
-            
-            <!-- Job 1: Bosch -->
-            <div class="experience-item">
-                <div class="job-header">
-                    <h3 class="job-title">Process Data Analyst & BI Developer</h3>
-                    <span class="job-duration">July 2023 - Present</span>
-                </div>
-                <div class="company-name">Bosch Cluj Plant | Cluj-Napoca, Romania</div>
-                
-                <div class="subsection-title">Process Optimization & Statistical Analysis</div>
-                <ul class="responsibilities">
-                    <li>Implemented Statistical Process Control (SPC) dashboards to monitor production parameters and identify process deviations</li>
-                    <li>Analyzed cycle time data and equipment utilization metrics to support capacity calculations and process capability studies</li>
-                    <li>Developed quality monitoring systems enabling engineering teams to track yield, failure rates, and defect patterns</li>
-                </ul>
-                
-                <div class="subsection-title">Production Support & KPI Monitoring</div>
-                <ul class="responsibilities">
-                    <li>Created targeted dashboards for Cost Optimization and Equipment Utilization, supporting management decisions on resource allocation and machine efficiency</li>
-                    <li>Participated in production meetings providing data-driven insights on quality, cycle time, and failure analysis to support KPI targets</li>
-                    <li>Supported engineering teams during ramp-up phases, start of production, and running series with weekly performance reports</li>
-                </ul>
-                
-                <div class="subsection-title">Documentation & Technical Support</div>
-                <ul class="responsibilities">
-                    <li>Created and maintained work instructions, documentation for data sources, calculation logic, and reporting procedures following lean production principles</li>
-                    <li>Supported preparation and coordination of technical documentation for control plans and process audits</li>
-                </ul>
-                
-            </div>
-            
-            <!-- Job 2: UTCN Project -->
-            <div class="experience-item">
-                <div class="job-header">
-                    <h3 class="job-title">Electrical Machine Implementation - Student Project</h3>
-                    <span class="job-duration">January 2024 - Present</span>
-                </div>
-                <div class="company-name">Solis UTCN Cluj-Napoca | Engineering Project | Automotive Sector</div>
-                <ul class="responsibilities">
-                    <li>Work on electrical machine systems for automotive applications, applying electromechanical and mechanical design principles</li>
-                    <li>Gain hands-on experience with power electronics, electric drives, pneumatics, and electrotechnics integration</li>
-                    <li>Collaborate in cross-functional team environment on technical problem-solving and engineering documentation</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- ========== TECHNICAL SKILLS ========== -->
-        <section class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-category-title">IT & Software Tools</div>
-                    <div class="skill-list">
-                        MS Office (Excel - advanced: pivot tables, macros, VBA), Power BI Advanced (TÜV Certified - DAX, data modeling), SAP ERP (data extraction, material movements), SQL, Python (data processing, automation)
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="skill-category-title">Manufacturing & Quality Systems</div>
-                    <div class="skill-list">
-                        Statistical Process Control (SPC), Lean Production Systems, Process Documentation, Control Plans, KPI Monitoring
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="skill-category-title">Production & Inspection Systems</div>
-                    <div class="skill-list">
-                        MES Systems (machine data, production tracking), Cycle Time Analysis
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="skill-category-title">Engineering & Technical</div>
-                    <div class="skill-list">
-                        Electrotechnics, Mechanical Design basics, Pneumatics, Power Electronics, MATLAB, Autodesk Fusion 360, KiCad EDA, LabVIEW, Linux/Ubuntu
-                    </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Data Analytics &amp; Reporting (Advanced)</div>
+                <div class="skill-list">
+                    Power BI Advanced (TÜV Certified – DAX, data modeling, server connections), MS Excel (pivot tables, macros, VBA, Power Query), Python (data processing, automation), SQL (data extraction, querying)
                 </div>
             </div>
-        </section>
-        
-        <!-- ========== EDUCATION ========== -->
-        <section class="section">
-            <h2>Education</h2>
-            
-            <div class="education-item">
-                <div class="degree">Master of Science in Electric Mobility Systems</div>
-                <div class="institution">Technical University of Cluj-Napoca, Faculty of Electrical Engineering</div>
-                <div class="education-duration">2024 - Present</div>
-            </div>
-            
-            <div class="education-item">
-                <div class="degree">Bachelor of Science in Power Electronics and Electric Drives</div>
-                <div class="institution">Technical University of Cluj-Napoca, Faculty of Electrical Engineering</div>
-                <div class="education-duration">2020 - 2024</div>
-            </div>
-        </section>
-        
-        <!-- ========== LANGUAGES ========== -->
-        <section class="section">
-            <h2>Languages</h2>
-            <div class="languages">
-                <div class="language-item">
-                    <span class="language-name">Romanian:</span> Native
-                </div>
-                <div class="language-item">
-                    <span class="language-name">English:</span> Intermediate (B1-B2)
-                </div>
-                <div class="language-item">
-                    <span class="language-name">French:</span> Beginner (A1)
+            <div class="skill-category">
+                <div class="skill-category-title">Manufacturing Systems &amp; Methods</div>
+                <div class="skill-list">
+                    Statistical Process Control (SPC), KPI monitoring and dashboarding, Lean production principles, Process capability analysis, Root cause analysis, MES systems (production tracking, machine data), SAP ERP (data extraction, material movements)
                 </div>
             </div>
-        </section>
-        
-        <!-- ========== ACHIEVEMENTS ========== -->
-        <section class="section">
-            <h2>Competitions & Problem-Solving</h2>
-            
-            <div class="achievement-item">
-                <span class="achievement-name">Third Place - MINOAN ROBOTSPORTS COMPETITION</span>
-                <div class="achievement-details">International Rally Event | April 2023</div>
+            <div class="skill-category">
+                <div class="skill-category-title">Engineering &amp; Technical Tools</div>
+                <div class="skill-list">
+                    Electrotechnics, Power electronics, Pneumatics, Mechanical design basics, MATLAB, Autodesk Fusion 360, KiCad EDA, LabVIEW, Linux/Ubuntu administration
+                </div>
             </div>
-            
-            <div class="achievement-item">
-                <span class="achievement-name">Robochallenge International Competition</span>
-                <div class="achievement-details">13th Edition, Bucharest | November 2022</div>
-            </div>
-            
-            <div class="achievement-item">
-                <span class="achievement-name">NASA Space Apps Challenge</span>
-                <div class="achievement-details">International Competition | October 2022</div>
-            </div>
-        </section>
-        
-    </div>
-    <!-- CONTAINER END -->
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="degree">Master of Science – Electric Mobility Systems</div>
+            <div class="institution">Technical University of Cluj-Napoca, Faculty of Electrical Engineering</div>
+            <div class="education-duration">2024 – Present</div>
+        </div>
+        <div class="education-item">
+            <div class="degree">Bachelor of Science – Power Electronics and Electric Drives</div>
+            <div class="institution">Technical University of Cluj-Napoca, Faculty of Electrical Engineering</div>
+            <div class="education-duration">2020 – 2024</div>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section">
+        <h2>Languages</h2>
+        <div class="languages">
+            <div class="language-item"><span class="language-name">Romanian:</span> Native</div>
+            <div class="language-item"><span class="language-name">English:</span> Intermediate (B1-B2)</div>
+            <div class="language-item"><span class="language-name">French:</span> Beginner (A1)</div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section">
+        <h2>Competitions &amp; Problem-Solving</h2>
+        <div class="achievement-item">
+            <span class="achievement-name">Third Place – MINOAN ROBOTSPORTS COMPETITION</span>
+            <div class="achievement-details">International Rally Event | April 2023</div>
+        </div>
+        <div class="achievement-item">
+            <span class="achievement-name">Robochallenge International Competition</span>
+            <div class="achievement-details">13th Edition, Bucharest | November 2022</div>
+        </div>
+        <div class="achievement-item">
+            <span class="achievement-name">NASA Space Apps Challenge</span>
+            <div class="achievement-details">International Competition | October 2022</div>
+        </div>
+    </section>
+
+</div>
 </body>
 </html>
